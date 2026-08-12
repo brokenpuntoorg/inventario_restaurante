@@ -1,0 +1,7 @@
+*.pem
+*.key
+*.db
+*.json
+ngrok.exe
+venv/
+__pycache__/
