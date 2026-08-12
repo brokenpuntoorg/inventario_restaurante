@@ -439,7 +439,7 @@ with tab1:
             st.error(f"Tienes {stock_critico} productos en nivel crítico. Revisa el panel lateral.")
 
 # Barra lateral con alertas de color
-st.sidebar.header("⚠️ Alertas de Stock Bajo")
+st.sidebar.header("⚠️ Alertas de Stock Bajo, por Categoría")
 if not df.empty:
     for _, row in df.iterrows():
         umbral = 5 if "Kg" not in str(row["Producto"]) else 2.0
